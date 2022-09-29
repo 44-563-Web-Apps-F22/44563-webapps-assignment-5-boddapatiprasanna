@@ -15,8 +15,27 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
     crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h2>Insects By Prasanna Boddapati</h2>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="insects.html">Interesting Insects</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link active" href="basic.html">Basic</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="advanced.html">Advanced</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  <h2>Insects By Prasanna Boddapati</h2>
     <div class="container">
       <div class="row">
         <div class="col-sm-2"> B </div>
@@ -47,5 +66,145 @@
         when resizing the browser size the insects name present in the col-sm-2 
         breaks first and are arranged vertically and the letters present in the 
         col-md are stackedvertically based on browser width</p>
-  </body>
+
+    <div class="container">
+      <img src="Bat fly.jpg" alt="Bat fly" width="200px" height="200px">
+      <img src="Odonata.jpg"  alt="Odonata" width="200px" height="200px">
+      <img src="Damselfly.jpg" alt="Damselfly" width="200px" height="200px">
+    </div>
+    <div>
+      <img src="Bat fly.jpg" alt="Bat fly" width="200px" height="200px">
+      <img src="Odonata.jpg"  alt="Odonata" width="200px" height="200px">
+      <img src="Damselfly.jpg" alt="Damselfly" width="200px" height="200px">
+    </div>
+    <br>
+    <table class="table table-striped table-bordered table-hover table-sm">
+      <caption>Insects Table</caption>
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Letter</th>
+            <th scope="col">Insect</th>
+            <th scope="col">City</th>
+            <th scope="col">River</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-info">
+            <th scope="row">B</th>
+            <td>Bat fly</td>
+            <td>Buffalo</td>
+            <td>Boardman River</td>
+          </tr>
+          <tr class = "table-info">
+            <th scope="row">D</th>
+            <td>Damselfly </td>
+            <td>Denizli</td>
+            <td>Dan Hole River</td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">A</th>
+            <td>Anoplura</td>
+            <td>Arlington</td>
+            <td>Abiqua Creek</td>
+          </tr>
+          <tr class="table-light">
+            <th scope="row" >P</th>
+            <td>Plecoptera</td>
+            <td>Portland</td>
+            <td>Pack River</td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row">T</th>
+            <td>Termites</td>
+            <td>Tampa</td>
+            <td>Ta River</td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">I</th>
+            <td>Isoptera</td>
+            <td>Irvine</td>
+            <td>Igushik River</td>
+          </tr>
+        </tbody>
+    </table>
+    <br>
+    <label>All Buttons</label>
+    <br>
+    <button class="btn">B</button>
+    <button class="btn">D</button>
+    <button class="btn">A</button>
+    <button class="btn">P</button>
+    <button class="btn">T</button>
+    <button class="btn">I</button>
+    <br>
+    <label>Button Groups</label>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group" role="group" aria-label="first group">
+        <button type="button" class="btn btn-success">B</button>
+        <button type="button" class="btn btn-success">A</button>
+        <button type="button" class="btn btn-success">D</button>
+      </div>
+
+      <div class="btn-group" role="group" aria-lable="second group">
+       <button type="button" class="btn btn-warning">P</button>
+       <button type="button" class="btn btn-warning">T</button>
+      </div> 
+      <div class="btn-group" role="group" aria-lable="third group">
+        <button type="button" class="btn btn-danger">I</button>
+     </div> 
+   </div>
+   <br>
+   <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+       <a class="dropdown-item" href="basic.html">Basic Page</a>
+       <a class="dropdown-item" href="advanced.html">Advanced Page</a>
+ 
+     </div>
+   </div>
+   <br>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-group">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-group">Insect</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your insect">
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="exampleCheck1">Sign up for newsletter? </label>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+    <div class="card-group">
+      <div class="card" style="width: 10rem;">
+        <img src="Bat fly.jpg" class="card-img-top" alt="TrueBugs">
+        <div class="card-body">
+          <h5 class="card-title">Bat fly</h5>
+          <p class="card-text">bat fly, any insect belonging to the two families Nycteribiidae and Streblidae (order Diptera). Members of the family Nycteribiidae are wingless, spiderlike insects with long legs and a small head that folds back into a groove in the thorax when at rest. They are external parasites of bats. Members of the family Streblidae do not bend their heads back. Wings may be present, vestigial, or absent. </p>
+          <a href="https://www.britannica.com/animal/bat-fly" class="btn btn-primary">Bat flys Page</a>
+        </div>
+      </div>
+      <div class="card" style="width: 10rem;">
+        <img src="Odonata.jpg" class="card-img-top" alt="Midges">
+        <div class="card-body">
+          <h5 class="card-title">Odonata</h5>
+          <p class="card-text">Odonata is an order of flying insects that includes the dragonflies and damselflies. Members of the group first appeared during the Triassic, though members of their total group, Odonatoptera, first appeared in Late Carboniferous</p>
+          <a href="https://en.wikipedia.org/wiki/Odonata" class="btn btn-primary">Odonata Page</a>
+        </div>
+      </div>
+      <div class="card" style="width: 10rem;">
+        <img src="Damselfly.jpg" class="card-img-top" alt="RobberFly">
+        <div class="card-body">
+          <h5 class="card-title">Damselfly</h5>
+          <p class="card-text">Damselflies are flying insects of the suborder Zygoptera in the order Odonata. They are similar to dragonflies, which constitute the other odonatan suborder, Anisoptera, but are smaller and have slimmer bodies.</p>
+          <a href="https://www.britannica.com/animal/damselfly" class="btn btn-primary">Damselfly Page</a>
+        </div>
+      </div>
+    </div>
+</body>
 </html>
